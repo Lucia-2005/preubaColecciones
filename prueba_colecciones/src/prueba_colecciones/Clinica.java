@@ -1,6 +1,7 @@
 package prueba_colecciones;
 //Lucia Castañera
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Clinica {
@@ -82,6 +83,8 @@ public class Clinica {
 				break;
 				
 			case 4:
+				//Iterator<Integer> iter=idPaciente.iterator();
+				
 				break;
 			case 5:
 				System.out.println("introduce código del paciente:");
@@ -99,6 +102,11 @@ public class Clinica {
 				System.out.println("Introduce codigo del paciente a eliminar");
 				codigo=sc.nextInt();
 				idPaciente.remove(codigo);
+				break;
+			
+			case 8:
+				System.out.println("saliendo del programa");
+				break;
 			}
 		}
 		
