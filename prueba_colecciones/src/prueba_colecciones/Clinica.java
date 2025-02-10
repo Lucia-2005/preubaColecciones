@@ -84,7 +84,12 @@ public class Clinica {
 				
 			case 4:
 				//Iterator<Integer> iter=idPaciente.iterator();
-				
+				for(int cod:idPaciente.keySet()){
+					if(idPaciente.get(cod).getEdad() > 65){
+						System.out.println("Código: "+cod);
+						System.out.println("Nombre: "+idPaciente.get(cod).getNombre());
+					}
+				}
 				break;
 			case 5:
 				System.out.println("introduce código del paciente:");
@@ -96,6 +101,12 @@ public class Clinica {
 				break;
 				
 			case 6:
+				int contador=0;
+				for(int cod:idPaciente.keySet()){
+					if(idPaciente.get(codigo).getColesterol() > 300){
+						contador++;
+					}
+				}
 				break;
 			
 			case 7:
